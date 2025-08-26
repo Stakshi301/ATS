@@ -1,35 +1,23 @@
 {
-  "name": "ats-tracker",
-  "version": "1.0.0",
-  "description": "An Applicant Tracking System (ATS) to manage job applications with drag-and-drop functionality, filtering, and authentication.",
-  "main": "src/app/page.js",
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint"
   },
-  "keywords": [
-    "nextjs",
-    "applicant-tracking-system",
-    "job-applications",
-    "drag-and-drop",
-    "authentication"
-  ],
-  "author": "Your Name",
-  "license": "MIT",
   "dependencies": {
-    "next": "latest",
-    "next-themes": "^0.2.1",
-    "react": "latest",
-    "react-beautiful-dnd": "^13.1.1",
-    "react-dom": "latest"
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "next": "15.5.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.21",
-    "eslint": "latest",
-    "eslint-config-next": "latest",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.12"
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.0",
+    "@eslint/eslintrc": "^3"
   }
 }
