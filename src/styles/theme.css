@@ -76,7 +76,6 @@ textarea:focus {
   background-color: var(--background-dark);
 }
 
-/* Add to globals.css or theme.css */
 .card {
   background-color: var(--background-light);
   color: var(--text-light);

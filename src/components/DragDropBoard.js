@@ -5,7 +5,7 @@ import CandidateForm from "./CandidateForm";
 import CandidateFilter from "./CandidateFilter";
 import ThemeToggle from "./ThemeToggle";
 
-// Initial candidate data
+// data
 const initialCandidates = [
   {
     id: "1",
@@ -96,14 +96,14 @@ export default function CandidateTracker() {
     });
   };
 
-  // Move application to another stage
+  // Move stage of appli 
   const moveCandidate = (id, newStatus) => {
     setCandidates(
       candidates.map((c) => (c.id === id ? { ...c, status: newStatus } : c))
     );
   };
 
-  // Filter candidates based on the filter state
+  // Filter candidates 
   const filteredCandidates = candidates.filter((c) => {
     return (
       (c.name.toLowerCase().includes(filter.search.toLowerCase()) ||
