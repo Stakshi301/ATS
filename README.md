@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ATS Tracker
 
-## Getting Started
+ATS Tracker is a web application designed to help users manage their job applications through various stages: Applied, Interview, Offer, and Rejected. The application supports drag-and-drop functionality, allowing users to easily move applications between stages. 
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Add New Applications**: Users can add new applications via a form that captures candidate name, role, years of experience, and resume link.
+- **Drag-and-Drop Interface**: Applications can be moved between stages using a simple drag-and-drop interface.
+- **Filter/Search Applications**: Users can filter and search applications by role, status, or years of experience.
+- **Dark/Light Mode Toggle**: Users can switch between dark and light themes for a personalized experience.
+- **Basic Authentication**: The application includes login and logout functionality to manage user sessions.
+
+## Project Structure
+
+```
+ats-tracker
+├── src
+│   ├── app
+│   │   ├── layout.js
+│   │   ├── page.js
+│   │   ├── login
+│   │   │   └── page.js
+│   │   ├── dashboard
+│   │   │   └── page.js
+│   │   └── logout
+│   │       └── page.js
+│   ├── components
+│   │   ├── ApplicationForm.js
+│   │   ├── DragDropBoard.js
+│   │   ├── FilterSearchBar.js
+│   │   ├── ThemeToggle.js
+│   │   └── Auth
+│   │       ├── LoginForm.js
+│   │       └── LogoutButton.js
+│   ├── context
+│   │   ├── AuthContext.js
+│   │   └── ThemeContext.js
+│   ├── styles
+│   │   ├── globals.css
+│   │   └── theme.css
+│   └── utils
+│       ├── auth.js
+│       └── filter.js
+├── package.json
+├── README.md
+└── next.config.js
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```
+   cd ats-tracker
+   ```
+3. Install the dependencies:
+   ```
+   npm install
+   ```
+4. Run the development server:
+   ```
+   npm run dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Usage
 
-## Learn More
+- Navigate to `/login` to authenticate.
+- After logging in, you will be redirected to the dashboard where you can manage your applications.
+- Use the application form to add new applications and utilize the drag-and-drop feature to move applications between stages.
+- Use the filter/search bar to find specific applications based on your criteria.
+- Toggle between dark and light modes using the theme toggle.
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.

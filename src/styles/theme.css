@@ -1,0 +1,94 @@
+:root {
+  --background-light: #ffffff;
+  --background-dark: #1a1a1a;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+  --primary-color: #0070f3;
+  --secondary-color: #6c757d;
+}
+
+body {
+  background-color: var(--background-light);
+  color: var(--text-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--text-dark);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+input,
+textarea {
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.drag-drop-board {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.stage {
+  flex: 1;
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  background-color: var(--background-light);
+  transition: background-color 0.3s ease;
+}
+
+.stage.dark {
+  background-color: var(--background-dark);
+}
+
+/* Add to globals.css or theme.css */
+.card {
+  background-color: var(--background-light);
+  color: var(--text-light);
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark .card {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
