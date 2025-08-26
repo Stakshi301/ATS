@@ -1,4 +1,4 @@
-module.exports = {
+const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
@@ -8,3 +8,5 @@ module.exports = {
     API_URL: process.env.API_URL, // Add your API URL here
   },
 };
+
+export default nextConfig;
